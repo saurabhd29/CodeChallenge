@@ -7,9 +7,7 @@
         Input:  { 5, 3, 4, 2, 6, 8 }
         Output: { 1152, 1920, 1440, 2880, 960, 720 }*/
 
-import java.util.Arrays;
-
-public class Problem_2906 {
+public class CodeChallenge_2906 {
 
     public static void main(String[] args){
         int[] array = { 1,2,3,4,5};

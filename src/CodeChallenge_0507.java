@@ -16,7 +16,7 @@ Merge two arrays by satisfying given constraints
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class Problem_0507 {
+public class CodeChallenge_0507 {
 
 
     public static void main(String[] args) {

@@ -23,7 +23,7 @@ Print all subarrays with 0 sum
 
 import java.util.*;
 
-public class Problem_3006 {
+public class CodeChallenge_3006 {
 
     public static void main(String[] args) {
         int[] array = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};

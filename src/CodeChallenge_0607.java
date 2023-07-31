@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class Problem_0607 {
+public class CodeChallenge_0607 {
 
     public static void main(String[] args) {
         int[] array = {1,1, 8, 7,3,1,1, 2, 6, 5,1,1, 2, 3};

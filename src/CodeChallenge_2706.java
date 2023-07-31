@@ -19,7 +19,7 @@
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 
-public class Problem_2706 {
+public class CodeChallenge_2706 {
 
     public static void main(String[] args) throws InterruptedException {
         long startTime = System.nanoTime();

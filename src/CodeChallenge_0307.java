@@ -9,7 +9,7 @@ Output: { 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 }
 
 import java.util.Arrays;
 
-public class Problem_0307 {
+public class CodeChallenge_0307 {
     public static void main(String[] args) {
         int[] array = { 0, 1, 2, 2, 1, 0, 0, 2, 0, 1, 1, 0 };
 //        swap(new int[]{3,5},0,1);
