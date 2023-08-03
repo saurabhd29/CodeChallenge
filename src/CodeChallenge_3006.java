@@ -34,10 +34,8 @@ public class CodeChallenge_3006 {
 
     private static void findZeroSum1(int[] array, int n) {
         ArrayList<Integer> arrayList = new ArrayList<>();
-
         int sum = 0;
         for (int i = 0; i < n; i++) {
-
             for (int j = i; j < n; j++) {
                 sum += array[j];
 //                System.out.println(array[j]+ ", Sum : "+ sum);
@@ -49,7 +47,6 @@ public class CodeChallenge_3006 {
                     for (int num : arrayList) {
                         System.out.print(num + " ");
                     }
-
                     System.out.println();
                     arrayList.clear();
                 }
@@ -59,9 +56,9 @@ public class CodeChallenge_3006 {
         }
     }
 
-
     private static void findZeroSum(int[] array, int n) {
         ArrayList<Integer> arrayList = new ArrayList<>();
+
         HashMap<Integer, List<Integer>> map = new HashMap<>();
         int sum=0;
         for (int i=0; i<n;i++){
@@ -88,7 +85,6 @@ public class CodeChallenge_3006 {
         /*for(Map.Entry<Integer, List<Integer>> e : map.entrySet()){
             System.out.println(e.getValue());
 //            for (Integer e1 : e.getValue())
-
         }*/
     }
 }
