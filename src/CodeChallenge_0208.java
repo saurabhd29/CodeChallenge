@@ -1,5 +1,6 @@
 /*
-Write code to print all combinations of positive integers in increasing order that sum to a given positive number.
+Write code to print all combinations of positive integers in
+increasing order that sum to a given positive number.
 
         For Example:
         Input:  N = 3
@@ -30,7 +31,7 @@ Write code to print all combinations of positive integers in increasing order th
 import java.util.Arrays;
 
 public class CodeChallenge_0208 {
-
+    static int j=0;
     static void findCombo(int array[], int index, int target, int decFactor) {
         System.out.println();
         if (decFactor < 0)
@@ -48,7 +49,7 @@ public class CodeChallenge_0208 {
         int prev = (index == 0) ?
                 1 : array[index - 1];
         System.out.println("prev "+prev);
-        int j=0;
+
         System.out.println("Array "+ Arrays.toString(array));
         for (int k = prev; k <= target ; k++)
         {
@@ -56,8 +57,7 @@ public class CodeChallenge_0208 {
             System.out.println("arr[index] "+ k);
             array[index] = k;
             System.out.println("Recursion  index "+(index+1)+ " target "+target+ " reduced num "+ (decFactor-k));
-            findCombo(array, index + 1, target,
-                    decFactor - k);
+            findCombo(array, index + 1, target, decFactor - k);
         }
     }
     public static void main(String[] args) {
