@@ -20,12 +20,13 @@ public class CodeChallenge_0808 {
         int max=Integer.MIN_VALUE;
         int minDiff=Integer.MAX_VALUE;
         List<Integer> list = new ArrayList<>();
-
+        int length=0;
         for(int i=0;i<array.length; i++){
             if(array[i]<max){
                 continue;
             }
             max=array[i];
+            System.out.println("i => "+i+" max = "+max);
             for(int j=0;j<array.length;j++){
                 if(i==j){
                     continue;
@@ -87,10 +88,11 @@ public class CodeChallenge_0808 {
         for (int i= minIndex; i<=maxIndex; i++){
             System.out.print(array[i]+" ");
         }
+
     }
     public static void main(String[] args) {
-        int[] array = {4, 6, 1, 7, 5, 9, 2};
-//        int[] array ={4, 2, 6, 4, 9};
+//        int[] array = {4, 6, 1, 7, 5, 9, 2};
+        int[] array ={4, 2, 6, 4, 9};
         findMinRemoval(array);
     }
 
