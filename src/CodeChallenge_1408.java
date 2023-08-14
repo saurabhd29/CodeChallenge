@@ -48,7 +48,7 @@ public class CodeChallenge_1408 {
     }
 
     public static void main(String[] args) {
-        checkIfFascinating(19);
+        checkIfFascinating(192);
     }
 
 
