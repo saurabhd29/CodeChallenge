@@ -31,7 +31,7 @@ public class CodeChallenge_1408 {
         int num1 = n *1000 + n*2;
         int num2 = num1*1000 + n*3;
         Set<String> set = new TreeSet<>();
-//        Set<Integer> number = new TreeSet<>(numbers);
+
         while(num2>0){
             int temp =num2%10;
             set.add(String.valueOf(temp));
