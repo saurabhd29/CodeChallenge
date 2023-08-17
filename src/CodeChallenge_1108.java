@@ -14,9 +14,7 @@ Given a non-negative integer n, print the first n rows of Pascal’s triangle.
 
 */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 public class CodeChallenge_1108 {
     private static void pascalsTraingle(int n) {
