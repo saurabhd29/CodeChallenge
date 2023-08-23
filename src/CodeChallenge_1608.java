@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 public class CodeChallenge_1608 {
 
-    private static void groupJugs(int[] red, int[] blue) {
+    private static <T,U> void groupJugs(T[] red, U[] blue) {
         Arrays.sort(red);
         Arrays.sort(blue);
 
@@ -26,8 +26,8 @@ public class CodeChallenge_1608 {
         System.out.println("Blue jugs: "+Arrays.toString(blue));
     }
     public static void main(String[] args) {
-        int[] red = {6, 3, 2, 8, 7};
-        int[] blue = {8, 6, 7, 2, 3};
+        Integer[] red = {6, 3, 2, 8, 7};
+        Integer[] blue = {8, 6, 7, 2, 3};
 
         groupJugs(red, blue);
     }
