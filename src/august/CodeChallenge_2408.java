@@ -48,7 +48,7 @@ public class CodeChallenge_2408 {
 
 
     public static void main(String[] args) {
-        int keys = 7287224;
+        int keys = 234;
         findCombinations2(keys);
 
     }
@@ -73,8 +73,8 @@ public class CodeChallenge_2408 {
 
 
     }
-
-    private static void findCombos1(int pos, List<String> comboList, String keyString, StringBuilder stringBuilder) {
+    static int count;
+    private static synchronized void findCombos1(int pos, List<String> comboList, String keyString, StringBuilder stringBuilder) {
         char[][] data = {{},{},{'A','B','C'},{'D','E','F'},{'G','H','I'},{'J','K','L'},{'M','N','O'}
                 ,{'P','O','R','S'},{'T','U','V'},{'W','X','Y','Z'}};
 
