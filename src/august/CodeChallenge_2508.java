@@ -31,7 +31,6 @@ public class CodeChallenge_2508 {
         for(int i=sort;i< array.length;i++){
             array[i] = list.get(n++);
         }
-
         System.out.println(Arrays.toString(array));
     }
 
