@@ -1,53 +1,65 @@
 package august;
-/*
-Check if the sentence is pangram.
-        A pangram is a sentence where every letter of the English alphabet appears at least once.
-        Given a string sentence containing only lowercase English letters, return true if sentence is a pangram,
-        or false otherwise.
+
+import java.util.Arrays;
+
+/*Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
         Example 1:
 
-        Input: sentence = "thequickbrownfoxjumpsoverthelazydog"
-        Output: true
-        Explanation: sentence contains at least one of every letter of the English alphabet.
+        Input: s = "Let's take LeetCode contest"
+        Output: "s'teL ekat edoCteeL tsetnoc"
         Example 2:
 
-        Input: sentence = "leetcode"
-        Output: false
-*/
-
+        Input: s = "God Ding"
+        Output: "doG gniD"*/
 public class CodeChallenge_2908 {
 
-    private static void findpangram(String string) {
-        String newString="";
-        for(char i='a';i<='z';i++){
-            System.out.println(i+" "+string.indexOf(i));
+    private static void reverseString(String string) {
 
-            if(string.indexOf(i)!=-1){
-
-                newString = newString+i;
+        String[] words = string.split("\\s");
+        System.out.println(Arrays.toString(words));
+        String revString = "";
+        for(String s : words){
+            for (int i=s.length()-1;i>=0;i--){
+//                System.out.println(s.charAt(i));
+                revString = revString + s.charAt(i);
             }
+            revString = revString + " ";
         }
-        System.out.println(newString);
-        if(newString.length() ==26){
-            System.out.println("Panagram");
-        }
+        System.out.println(revString);
     }
-    private static void findpangram1(String string) {
 
-        for(char ch ='a';ch<='z';ch++ ){
-            if(string.indexOf(ch)==-1) {
-                System.out.println("Not Panagram");
-                return;
-            }
+    private static void reverseString1(String string) {
+        String[] words = string.split("\\s");
+        StringBuilder stringBuilder = new StringBuilder();
+        for(String word : words){
+            StringBuilder str = new StringBuilder(word);
+            str.reverse();
+            stringBuilder.append(str+" ");
         }
-        System.out.println("Panagram");
+        System.out.println(stringBuilder);
     }
+
+    private static void reverseStringLastToFirst(String string) {
+
+        String[] words = string.split("\\s");
+        System.out.println(Arrays.toString(words));
+        String revString = "";
+        for(int i=words.length-1;i>=0;i--){
+            String s = words[i];
+            for (int j=s.length()-1;j>=0;j--){
+//                System.out.println(s.charAt(j));
+                revString = revString + s.charAt(j);
+            }
+            revString = revString + " ";
+        }
+        System.out.println(revString);
+    }
+
     public static void main(String[] args) {
-        String string = "thequickbrownfoxju mpsoverthelazydot";
+        String string ="Let's take LeetCode contest";
 
-        findpangram(string);
-
+        reverseString(string);
     }
 
 
