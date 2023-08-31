@@ -84,10 +84,14 @@ public class CodeChallenge_3008 {
     public static void main(String[] args) {
         String inputString = "G()()()()(al)";
 
-        findConcatStringBuffer(inputString);
+        findByReplace(inputString);
     }
 
-
+    private static void findByReplace(String inputString) {
+        inputString =inputString.replace("()","o");
+        inputString = inputString.replace("(al)","al");
+        System.out.println(inputString);
+    }
 
 
 }
