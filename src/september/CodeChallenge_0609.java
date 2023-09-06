@@ -32,7 +32,7 @@ import java.util.List;
 public class CodeChallenge_0609 {
 
     public static void main(String[] args) {
-        int[] array = {9,6,4,2,3,5,7,0,1};
+        int[] array = {0,1};
 
         findMissingNumber(array);
 
@@ -43,11 +43,12 @@ public class CodeChallenge_0609 {
         int max = findMaximum(array);
         boolean flag = false;
         Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
         for(int i=0;i<n;i++){
-            if(array[i]!=i && array[i]!=n){
+            if(array[i]!=i ){
                 System.out.println(i);
             }
-            else if(array[i] == n){
+            if(array[i] == n){
                 flag = true;
             }
         }
