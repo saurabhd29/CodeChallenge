@@ -34,7 +34,7 @@ import java.util.Arrays;
         Output: 3 2 1 6 5 4 9 8 7 10
         Explanation: First group consists of elements
         1, 2, 3. Second group consists of 4,5,6. Third Group consist of 7,8,9 and the last group had only 10.*/
-public class CodeChallenge_0209 {
+public class CodeChallenge_0409 {
 
     private static void findSorted(int[] array, int k) {
 
