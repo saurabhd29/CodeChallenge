@@ -50,7 +50,7 @@ public class CodeChallenge_1309 {
             maxNum=maxNum*10;
         }
 
-        System.out.println(maxNum-1);
+//        System.out.println(maxNum-1);
         return --maxNum;
     }
 }
